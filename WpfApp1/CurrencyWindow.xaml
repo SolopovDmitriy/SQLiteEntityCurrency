@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp1.CurrencyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="CurrencyWindow" Height="450" Width="800">
+    <Grid>       
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="50"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Row="1"  Grid.Column="0" Orientation="Horizontal" Margin="130,47,0,17">
+            <Label Content="From: " Margin="5 0 5 0"/>
+            <ComboBox x:Name="ComboBox_CurrencyFrom" Width="100"/>
+            <TextBox x:Name="TextBox_CurrencyFrom"  TextWrapping="Wrap" Width="120" Margin="5 0 5 0"/>
+
+            <Label Content="To: " Margin="5 0 5 0"/>
+            <ComboBox x:Name="ComboBox_CurrencyTo" Width="100"/>
+            <TextBox x:Name="TextBox_CurrencyTo"  TextWrapping="Wrap" Width="120" Margin="5 0 5 0"/>
+            
+            <Button x:Name="Button_ConvertCurrency" Padding="2" FontSize="10" FontWeight="Bold" 
+                    Margin="5 0 5 0"  Width="55" Click="Button_ConvertCurrency_Click" >Convert</Button>
+           
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
